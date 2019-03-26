@@ -159,6 +159,18 @@ set your label jsons path, then excute
 python labelme_to_coco.py
 ```
 - all data will be converted and saved in Coco/
+- NOTE or make your coco dataset as this
+```python
+ROOT_PATH
+-----Coco/
+----------annotations/
+--------------instances_train2017.json
+--------------instances_val2017.json
+----------images/
+--------------train2017/
+------------------xxxx.jpg
+--------------val2017/
+```
 # 3 train and evaluate
 ## 3.1 train on your dataset
 1. adjust parameters of CocoConfig for your own dataset in control/coco.py; then excute 
@@ -175,3 +187,26 @@ python coco.py train --model last
 cd control/
 python coco.py evaluate --model last
 ```
+## 3.3 results of coco
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/1.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/1_p.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/2.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/2_p.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/3.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/3_p.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/4.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/4_p.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/5.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/5_p.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/6.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/6_p.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/7.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/7_p.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/8.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/8_p.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/9.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/9_p.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/10.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/10_p.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/11.png'>
+<img src='https://github.com/tsing-cv/tf.keras_Mask_rcnn/blob/master/results/11_p.png'>
